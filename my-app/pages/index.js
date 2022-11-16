@@ -1,6 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Contract, providers } from "ethers";
 import { formatEther } from "ethers/lib/utils";
 import Head from "next/head";
+import Image from 'next/image'
 import { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import {
@@ -371,7 +373,12 @@ export default function Home() {
           {renderTabs()}
         </div>
         <div>
-          <img className={styles.image} src="/cryptodevs/0.svg" />
+          <Image 
+            src="/0.svg" 
+            alt="Crypto Devs"
+            width={500}
+            height={500}
+          />
         </div>
       </div>
 
